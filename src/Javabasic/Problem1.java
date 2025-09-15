@@ -16,6 +16,6 @@ public class Problem1 {
         map.entrySet().stream()
                 .filter(e -> e.getValue() > 1)
                 .forEach(e -> System.out.printf("->%n", e.getKey(), e.getValue()));
-        System.out.println("first code");
+
     }
 }
