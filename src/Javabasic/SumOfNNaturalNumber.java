@@ -24,6 +24,13 @@ public class SumOfNNaturalNumber {
         long sum  = n * (n + 1) / 2;
         long end1 = System.nanoTime();
         System.out.println("Sum of first " + n + " natural numbers is: " + sum);
-        System.out.println("Loop time: " + (end1 - start1) / 1_000_000.0 + " ms");
+        System.out.println("formula time: " + (end1 - start1) / 1_000_000.0 + " ms");
+
+        // fast than  above  it us  Binary shift method
+        long start3 = System.nanoTime();
+        long sum3 = (n * (n + 1)) >> 1;
+        long end3 = System.nanoTime();
+        System.out.println("Binary shift sum = " + sum3);
+        System.out.println("Binary shift time: " + (end3 - start3) / 1_000_000.0 + " ms");
     }
 }
