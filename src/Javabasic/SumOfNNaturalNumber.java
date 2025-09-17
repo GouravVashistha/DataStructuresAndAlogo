@@ -26,7 +26,7 @@ public class SumOfNNaturalNumber {
         System.out.println("Sum of first " + n + " natural numbers is: " + sum);
         System.out.println("formula time: " + (end1 - start1) / 1_000_000.0 + " ms");
 
-        // fast than  above  it us  Binary shift method
+        // faster than above it us Binary shift method
         long start3 = System.nanoTime();
         long sum3 = (n * (n + 1)) >> 1;
         long end3 = System.nanoTime();
